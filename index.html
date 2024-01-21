@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample_bill</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="containerEl">
+      <div class="d-flex p-2 justify-content-between align-items-start">
+        <img
+          src="https://i.ibb.co/GQS8x4S/tidel.png"
+          class="logoEl"
+          alt="load again"
+        />
+        <p class="p-0 m-0 fs-5">Tenant Bill Summary</p>
+      </div>
+      <div class="d-flex p-2 justify-content-between align-items-end">
+        <div>
+          <p class="p-0 m-0">Invoice No: %INVOICE_NO%</p>
+          <p class="p-0 m-0">Tenant: %TENANT%</p>
+          <p class="p-0 m-0">Suite: %SUITE%</p>
+          <p class="p-0 m-0 text-wrap" style="max-width: 15rem">
+            Address: %ADDRESS%
+          </p>
+        </div>
+        <div>
+          <p class="p-0 m-0">Bill From: %BILL_FROM%</p>
+          <p class="p-0 m-0">Bill To: %BILL_TO%</p>
+          <p class="p-0 m-0">Date Raised: %DATE_RAISED%</p>
+        </div>
+      </div>
+      <!-- REPLACE_WITH_DYNAMIC_TABLES -->
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
